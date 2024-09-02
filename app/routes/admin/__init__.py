@@ -11,4 +11,5 @@ admin = Blueprint("admin", __name__, template_folder=admin_template, static_fold
 @admin.route("/dashboard")
 def dashboard():
     
-    return render_template("dashboard.html")
+    title = "Dashboard"
+    return render_template("dashboard.html", title=title)
