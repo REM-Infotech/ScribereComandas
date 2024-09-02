@@ -6,7 +6,7 @@ from configs import csp
 from datetime import timedelta
 import os
 
-files_render = os.path.join(os.getcwd(), "app", "src")
+files_render = os.path.join(os.getcwd(), "src")
 app = Flask(__name__, template_folder = files_render, static_folder = files_render)
 
 app.config.from_object("app.default_config")
